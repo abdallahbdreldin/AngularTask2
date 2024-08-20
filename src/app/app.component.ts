@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { products } from './Data.ts/db-data';
+import { IProduct } from './Interface/Iproduct';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ecommerce-task';
+  prodducts = products
+
+  addToProducts(prod:IProduct){
+    this.prodducts.push(prod)
+  }
 }

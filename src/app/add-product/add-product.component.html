@@ -1,0 +1,15 @@
+<div class="col-md-12">
+    <p>Add New Product</p>
+    <Label>Product Name</Label>
+    <input type="text" class="form-control" [(ngModel)]="product.name">
+
+    <Label>Product Description</Label>
+    <input type="text" class="form-control" [(ngModel)]="product.description">
+
+    <Label>Product Price</Label>
+    <input type="text" class="form-control" [(ngModel)]="product.price">
+    <br>
+    <button class="btn btn-primary" (click)="onAddProduct()">Add Product</button>
+    <br>
+    <br>
+</div>
