@@ -3,8 +3,8 @@
       <h5 class="card-title">{{product.name}}</h5>
       <img [src]="product.img" alt="product img">
         <div class="card-body">
-          <p class="card-text">{{product.description}}</p>
-          <p class="card-text btn btn-primary"><strong>Price: </strong>{{ product.price }}</p>
+          <p appTextColor [mainColor]="'blue'" class="card-text">{{product.description}}</p>
+          <p class="card-text btn btn-primary "><strong>Price: </strong>{{ product.price }}</p>
         </div>
     </div>
   </div>

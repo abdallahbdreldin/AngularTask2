@@ -5,7 +5,10 @@
   <div class="row">
     @for(product of prodducts;track product){
 
-      <app-products [product]="product"></app-products>
+      <app-products
+        appBackground [basicColor]="'white'" [coloredColor]="'gray'"
+         [product]="product">
+      </app-products>
     }
   </div>
 </div>
